@@ -1,37 +1,63 @@
-
+// When the document has fully loaded
 $(document).ready(function() {
 
-    
+    // assign event handlers to the project images
     $(".project img").on("mouseover", projectRevealCard);
     $(".project img").on("mousedown", projectHighlightCard);
     $(".project img").on("mouseup",   projectCardFlip);
+    $(".closer").on("mouseup", reset);
 
+    // start the fade-in of the project work
     $("#work").addClass("displayWork");
+    $("body").on("mouseup", reset);
     fadeInProjects();
 
 });
 
-
+// handle hover effect for project images
 var projectRevealCard = function(event) {
+    event.stopPropagation();
     $(".project img").removeClass("revealCardImage");
     let cardImage = $(event.target);
     cardImage.addClass("revealCardImage");
 }
+// handle mouse down for project images
 var projectHighlightCard = function(event) {
+    event.stopPropagation();
     $(".project img").removeClass("highlightCardImage");
     let cardImage = $(event.target);
     cardImage.addClass("highlightCardImage");
 }
+// handle mouse up (full click) for project images to reveal Info Card
 var projectCardFlip = function(event) {
-    $(".projectInfo").removeClass("slideUp");
+    event.stopPropagation();
+
+    // remove the reveal from all the other card images
     let cards = $(".project img");
     cards.removeClass("revealCardImage");
+    $(".closer").removeClass("turnOn");
+
+    // first remove this class from the other project images
     $(".projectInfo").removeClass("slideUp");
     let card = $(event.target);
+
+    // turn off all the other closers -- and turn on this one
+    let closer = card.parent().find(".closer");
+    closer.addClass("turnOn");
+
     let info = card.next(".projectInfo")[0];
     $(info).addClass("slideUp");
+    
 }
 
+var reset = function() {
+    $(".project img").removeClass("revealCardImage");
+    $(".project img").removeClass("highlightCardImage");
+    $(".projectInfo").removeClass("slideUp");
+    $(".closer").removeClass("turnOn");
+}
+
+// Set up a sequence of fade in's for all the projects
 var fadeInProjects = function() {
     const projects = $(".project");
     projects.each( (index,project) => {
