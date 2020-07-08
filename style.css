@@ -50,9 +50,12 @@ p {
     margin:auto;
     box-sizing: border-box;
     padding:0;
+    opacity:0;
+    height:1px;
     /* border-top:2px solid black; */
     padding-top:0;
     /* border:2px solid green; */
+    transition: all .5s .25s;
 }
 
 h1 {
@@ -88,11 +91,15 @@ h2 {
     background-color:gray;
     display:block;
     vertical-align: top;
-
+    opacity:0;
     margin:auto;
     margin-top:0px;
     margin-bottom:20px;
     box-shadow:0 0 8px gray;
+    transition:all 2s .5s;
+    position: relative;
+    overflow: hidden;
+    height:300px;
 }
 
 .project img {
@@ -100,7 +107,7 @@ h2 {
     margin:0;
     padding:0;
     line-height: 0;
-
+    opacity:.8;
     margin-bottom:-7px;
 }
 
@@ -109,12 +116,18 @@ h2 {
     width:100%;
     padding:10px;
     box-sizing: border-box;
-   
+    height:100px;
+    overflow: hidden;
+    position:relative;
+    top:0;
+    transition:all .5s;
 }
+
+
 
 .live {
     text-decoration: none;
-    color:red;
+    color:blue;
    
 }
 .live::before {
@@ -157,6 +170,21 @@ h2 {
 .bdCard {
     width:100%;
 }
+
+.displayWork {
+    opacity:1;
+    height:400px;
+}
+
+.displayProject {
+    opacity:1;
+}
+
+.slideUp {
+    top:-350px;
+    height:350px;
+}
+
 /*  ClearFix  */
 /*  The ClearFix by Tony Aslett and Nicholas Gallagher */
 .group:before,
@@ -227,7 +255,10 @@ h2 {
         clear:both;
         margin-left:0px;
         padding:0;
+
     }
+
+
 
     h1 {
         padding-left:20px;
@@ -243,10 +274,14 @@ h2 {
         vertical-align: top;
         margin-top:0px;
         margin-left:20px;
+        user-select: none;
+
     }
 
     .projectInfo {
-        min-height:280px;
+       
+        height:50px;
+        overflow: hidden;
     }
 
     .projectInfo h1 {
@@ -274,5 +309,20 @@ h2 {
         margin-left:20px;
     }
 
+    .slideUp {
+        top:-250px;
+        height:300px;
+    }
 
+}
+
+
+
+
+.project img.revealCardImage {
+    opacity:.9;
+}
+
+.project img.highlightCardImage {
+    opacity:1;
 }
