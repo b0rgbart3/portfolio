@@ -41,7 +41,8 @@ html, body {
     display:block;
     margin:auto;
     box-sizing: border-box;
- 
+    padding:0;
+    border:2px solid green;
 }
 
 h1 {
@@ -49,6 +50,11 @@ h1 {
     font-weight: 800;
     padding-left:0px;
     font-size:1.4em;
+}
+
+h2 {
+    font-size:1.1em;
+    font-weight:800;
 }
 
 .project {
@@ -69,6 +75,11 @@ h1 {
     display:inline-block;
     float:left;
     cursor: pointer;
+    opacity:.5;
+}
+
+.icon:hover {
+    opacity:1;
 }
 .github {
     background-image:url('assets/github_round.svg');
@@ -84,7 +95,9 @@ h1 {
     background-image:url('assets/linked_in_hi.svg');
 }
 
-
+.bdCard {
+    width:100%;
+}
 /*  ClearFix  */
 /*  The ClearFix by Tony Aslett and Nicholas Gallagher */
 .group:before,
@@ -122,6 +135,7 @@ h1 {
         margin-top:40px;
         display:inline-block;
         float:left;
+        min-width:300px;
     }
 
     .plate img {
@@ -129,17 +143,20 @@ h1 {
     }
 
     #plate {
-        width:30%;
+        width:10%;
+        padding-left:40px;
     }
     .logo {
         width:100%;
         position: relative;
         left:0px;
         max-width:300px;
+        margin-bottom:20px;
     }
     .brand {
-        width:46%;
+        width:60%;
         margin-top:40px;
+        margin-left:0;
         display:inline-block;
         float:left;
     }
@@ -149,6 +166,7 @@ h1 {
         margin:0;
         clear:both;
         margin-left:10px;
+        padding:0;
     }
 
     h1 {
