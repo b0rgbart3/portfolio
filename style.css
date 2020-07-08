@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Muli:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html, body {
+
+    font-family: "Muli", sans-serif;
+    font-size:15px;
+    line-height:25px;
+}
+
+.plate {
+    width:40%;
+    min-width:350px;
+    display:block;
+    margin: auto;
+    box-sizing: border-box;
+    /* border:2px solid blue; */
+}
+
+.logo {
+    width:100%;
+    position: relative;
+    left:-30px;
+}
+
+.brand {
+    width:40%;
+    min-width:350px;
+    display:block;
+    margin: auto;
+    box-sizing: border-box;
+    /* border:2px solid green; */
+    margin-top:0;
+    padding-top:0;
+}
+
+
+.work {
+    clear: both;
+    min-width:350px;
+    width:40%;
+    display:block;
+    margin:auto;
+    box-sizing: border-box;
+ 
+}
+
+h1 {
+    text-transform: uppercase;
+    font-weight: 800;
+    padding-left:0px;
+    font-size:1.4em;
+}
+
+.project {
+    width:350px;
+    height:350px;
+    background-color:gray;
+    display:inline-block;
+    float:left;
+    vertical-align: top;
+    margin-top:20px;
+}
+
+.icon {
+    width:80px;
+    height:80px;
+    background-size:80px 80px;
+    background-repeat: no-repeat;
+    display:inline-block;
+    float:left;
+    cursor: pointer;
+}
+.github {
+    background-image:url('assets/github_round.svg');
+}
+
+.github:hover {
+    background-image:url('assets/github_round_hi.svg');
+}
+.linkedin {
+    background-image:url('assets/linked_in_black.svg');
+}
+.linkedin:hover {
+    background-image:url('assets/linked_in_hi.svg');
+}
+
+
+/*  ClearFix  */
+/*  The ClearFix by Tony Aslett and Nicholas Gallagher */
+.group:before,
+.group:after {
+  content: "";
+  display: table; }
+
+.group:after {
+  clear: both; }
+
+.group {
+  zoom: 1;
+  /* IE6&7 */ }
+
+    
+  
+/* Styles for larger screens */
+
+@media only screen and (min-width:854px) {
+
+    html {
+        background-color:rgb(225, 225, 225);
+    }
+    body {
+        padding-left:20px;
+        border-radius:4px;
+        background-color:white;
+        max-width:900px;
+        width:94%;
+        margin:auto;
+        margin-top:30px;
+        box-shadow:0 0 4px rgb(194, 194, 194);
+    }
+    .plate {
+        margin-top:40px;
+        display:inline-block;
+        float:left;
+    }
+
+    .plate img {
+
+    }
+
+    #plate {
+        width:30%;
+    }
+    .logo {
+        width:100%;
+        position: relative;
+        left:0px;
+        max-width:300px;
+    }
+    .brand {
+        width:46%;
+        margin-top:40px;
+        display:inline-block;
+        float:left;
+    }
+
+    .work {
+        width:800px;
+        margin:0;
+        clear:both;
+        margin-left:10px;
+    }
+
+    h1 {
+        padding-left:20px;
+    }
+
+    .project {
+        width:240px;
+        height:240px;
+        background-color:gray;
+        display:inline-block;
+        float:left;
+        vertical-align: top;
+        margin-top:0px;
+        margin-left:20px;
+    }
+    .icon {
+        width:60px;
+        height:60px;
+        background-size:60px 60px;
+    }
+
+
+    .github {
+        margin-left:20px;
+    }
+
+
+}
