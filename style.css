@@ -112,6 +112,20 @@ h2 {
    
 }
 
+.live {
+    text-decoration: none;
+    color:red;
+   
+}
+.live::before {
+    content:"| ";
+}
+.live::after {
+    content: " |";
+}
+.live:hover {
+    color:blue;
+}
 .icon {
     width:80px;
     height:80px;
