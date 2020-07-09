@@ -175,21 +175,29 @@ h2 {
     box-shadow:0 -10px 20px rgba(0,0,0,.3);
 }
 
-
+.links {
+    padding-top:10px;
+}
 
 .live {
     text-decoration: none;
-    color:blue;
-   
+    background-color:rgb(0, 110, 255);
+    margin-right:10px;
+    padding:8px;
+    border-radius:4px;
+    color:white;
+    font-weight: 400;
+    user-select: none;
+    cursor: pointer;
 }
-.live::before {
+/* .live::before {
     content:"| ";
 }
 .live::after {
     content: " |";
-}
+} */
 .live:hover {
-    color:blue;
+    background-color:blue;
 }
 .icon {
     width:80px;
