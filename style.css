@@ -15,12 +15,19 @@ body {
     padding:0;
 }
 
+.framer {
+    padding-left:20px;
+    padding-right:20px;
+    width:100%;
+    box-sizing: border-box;
+}
+
 p {
     font-size:15px;
 }
 .plate {
     width:40%;
-    min-width:370px;
+    min-width:320px;
     display:block;
     margin: auto;
     box-sizing: border-box;
@@ -44,7 +51,7 @@ p {
 
 .brand {
     width:40%;
-    min-width:370px;
+    min-width:300px;
     display:block;
     margin: auto;
     box-sizing: border-box;
@@ -106,7 +113,7 @@ h2 {
 }
 
 .project {
-    width:350px;
+    width:320px;
     background-color:gray;
     display:block;
     vertical-align: top;
@@ -259,7 +266,7 @@ h2 {
 }
 
 .slideUp {
-    top:-350px;
+    top:-320px;
     height:400px;
     padding-top:40px;
 }
