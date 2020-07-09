@@ -9,10 +9,16 @@ $(document).ready(function() {
 
     // start the fade-in of the project work
     $("#work").addClass("displayWork");
-    $("body").on("mouseup", reset);
+    $("#work").on("mouseup", touchBody);
+    $("html").on("mouseup", touchBody);
     fadeInProjects();
 
 });
+
+var touchBody = function() {
+console.log("touched body");
+reset();
+}
 
 // handle hover effect for project images
 var projectRevealCard = function(event) {

@@ -17,17 +17,26 @@ p {
 }
 .plate {
     width:40%;
-    min-width:350px;
+    min-width:370px;
     display:block;
     margin: auto;
     box-sizing: border-box;
     /* border:2px solid blue; */
+    margin-bottom:20px;
 }
 
 .logo {
-    width:100%;
+    width:80%;
     position: relative;
-    left:-30px;
+    left:-20px;
+}
+
+.icons {
+    /* border:2px solid green; */
+    width:100%;
+    margin:0;
+    position: relative;
+    left:-20px;
 }
 
 .brand {
@@ -154,7 +163,7 @@ h2 {
     top:0;
     transition:all .5s;
     height:480px;
-    box-shadow:0 0 10px rgba(0,0,0,0);
+    box-shadow:0 -10px 20px rgba(0,0,0,.3);
 }
 
 
@@ -194,6 +203,15 @@ h2 {
 .github:hover {
     background-image:url('assets/github_round_hi.svg');
 }
+
+.pdf {
+   background-image:url('assets/pdf.png');
+}
+
+.pdf:hover {
+    background-image:url('assets/pdf_hi.png');
+}
+
 .linkedin {
     background-image:url('assets/linked_in_black.svg');
 }
@@ -273,8 +291,9 @@ h2 {
         width:100%;
         position: relative;
         left:0px;
-        max-width:300px;
+        max-width:320px;
         margin-bottom:20px;
+        /* border:1px solid blue; */
     }
     .brand {
         width:64%;
