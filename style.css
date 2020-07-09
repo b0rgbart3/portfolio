@@ -56,6 +56,7 @@ p {
 .codeImage {
     background-image:url("assets/code3.jpg");
     background-size:100%;
+    background-position: 50% 50%;
     width:100%;
     height:200px;
 }
@@ -189,6 +190,10 @@ h2 {
     font-weight: 400;
     user-select: none;
     cursor: pointer;
+}
+
+.githubLink {
+    background-color:#80c01f;
 }
 /* .live::before {
     content:"| ";
