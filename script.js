@@ -1,6 +1,8 @@
 // When the document has fully loaded
 $(document).ready(function() {
 
+    $(".closer").css({"display":"none"});
+
     // assign event handlers to the project images
     $(".project img").on("mouseover", projectRevealCard);
     $(".project img").on("mousedown", projectHighlightCard);
@@ -41,6 +43,8 @@ var projectCardFlip = function(event) {
     // remove the reveal from all the other card images
     let cards = $(".project img");
     cards.removeClass("revealCardImage");
+
+    // remove the turnOn Class from all the closers
     $(".closer").removeClass("turnOn");
 
     // first remove this class from the other project images
@@ -49,6 +53,8 @@ var projectCardFlip = function(event) {
 
     // turn off all the other closers -- and turn on this one
     let closer = card.parent().find(".closer");
+    // add the turnOnClass for just this one closer
+    closer.css({"display":"inline-block"});
     closer.addClass("turnOn");
 
     let info = card.next(".projectInfo")[0];
@@ -57,10 +63,21 @@ var projectCardFlip = function(event) {
 }
 
 var reset = function() {
-    $(".project img").removeClass("revealCardImage");
-    $(".project img").removeClass("highlightCardImage");
-    $(".projectInfo").removeClass("slideUp");
+    // turn off all the closer icons
+    $(".closer").css({"display":"none"});
     $(".closer").removeClass("turnOn");
+
+    // turn off all hover styling on the card images
+    $(".project img").removeClass("revealCardImage");
+
+    // turn off all highlight styling for the card images
+    $(".project img").removeClass("highlightCardImage");
+
+    // send all the info cards back to their original positions
+    $(".projectInfo").removeClass("slideUp");
+
+    
+   
 }
 
 // Set up a sequence of fade in's for all the projects

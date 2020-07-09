@@ -47,6 +47,7 @@ p {
     margin:0;
     position: relative;
     left:-20px;
+
 }
 
 .brand {
@@ -224,6 +225,7 @@ h2 {
     float:left;
     cursor: pointer;
     opacity:.5;
+    transition: all .25s;
 }
 
 .icon:hover {
