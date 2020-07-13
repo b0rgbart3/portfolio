@@ -22,11 +22,35 @@ body {
     box-sizing: border-box;
 }
 
+.emailLink {
+    margin:0;
+    padding:0;
+    line-height:1.9em;
+    margin-left:0px;
+    margin-bottom:20px;
+}
+.myemail {
+    margin-left:0px;
+    text-decoration: none;
+}
+
+a.myemail {
+    color:black;
+}
+
+a.myemail:hover {
+    color:blue;
+}
+
+a.myemail:active {
+    color:blue;
+}
+
 p {
     font-size:15px;
 }
 .plate {
-    width:40%;
+    width:50%;
     min-width:320px;
     display:block;
     margin: auto;
@@ -39,6 +63,7 @@ p {
     width:80%;
     position: relative;
     left:-20px;
+    padding-bottom: 20px;
 }
 
 .icons {
@@ -46,13 +71,13 @@ p {
     width:100%;
     margin:0;
     position: relative;
-    left:-20px;
+    left:-14px;
 
 }
 
 .brand {
-    width:40%;
-    min-width:300px;
+    width:50%;
+    min-width:320px;
     display:block;
     margin: auto;
     box-sizing: border-box;
@@ -217,9 +242,9 @@ h2 {
     background-color:#253254;
 }
 .icon {
-    width:80px;
-    height:80px;
-    background-size:80px 80px;
+    width:60px;
+    height:60px;
+    background-size:60px 60px;
     background-repeat: no-repeat;
     display:inline-block;
     float:left;
@@ -325,7 +350,7 @@ h2 {
     .logo {
         width:100%;
         position: relative;
-        left:0px;
+        left:-14px;
         max-width:320px;
         margin-bottom:20px;
         /* border:1px solid blue; */
@@ -383,12 +408,18 @@ h2 {
         padding-top:0;
         font-size:13px;
     }
+
     .icon {
         width:60px;
         height:60px;
         background-size:60px 60px;
     }
 
+
+.icons {
+    left:-30px;
+
+}
 
     .github {
         margin-left:20px;

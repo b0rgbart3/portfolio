@@ -8,7 +8,7 @@ This is my current portfolio, which has a responsive layout, and links to some o
 
 ![Responsive Porfolio](responsive_layout_preview.jpg)
 
-<a href="https://b0rgbart3.github.io/responsive-portfolio2/">Live Demo</a>
+<a href="https://b0rgbart3.github.io/portfolio/">Live Demo</a>
 
 ## Features
 1. Mobile First Design / Responsive Layout
